@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Tic Tac Toe game">
+    <meta name="author" content="Nathaniel Nasarow">
+    <!-- Custom CSS -->
+
+    <link rel="stylesheet" href="tictactoe.css" type="text/css">
+
+
+</head>
+<body id="page-top">
+    <div class="nav-bar">
+        <div id="logo"><img src="tictaclogo.png" class="ticLogo" /></div>
+        <div id="status" class="statusBoxes transitionSet"><p></p></div>
+        <div id="turn" class="statusBoxes transitionSet"><p></p></div>
+    </div>
+
+    <div id="tableBox">
+        <table id="tictactoeTable" class="transitionSet">
+            <tr id="rowOne" class="tableRow">
+                <td class="tableSquare">
+                </td>
+                <td class="tableSquare">
+                </td>
+                <td class="tableSquare">
+                </td>
+            </tr>
+            <tr id="rowTwo" class="tableRow">
+                <td class="tableSquare">
+                </td>
+                <td class="tableSquare">
+                </td>
+                <td class="tableSquare">
+                </td>
+            </tr>
+            <tr id="rowThree" class="tableRow">
+                <td class="tableSquare">
+                </td>
+                <td class="tableSquare">
+                </td>
+                <td class="tableSquare">
+                </td>
+            </tr>
+        </table>
+        <div id="playerSelect" class="centered transitionSet">
+            <h3>How many players?</h3>
+            <button onclick="howManyPlayers(this)" class="playerButton ">One</button>
+            <button onclick="howManyPlayers(this)" class="playerButton ">Two</button>
+        </div>
+        <div id="selectXorO" class="centered transitionSet">
+            <h3>How do you want to play as?</h3>
+            <button onclick="exOrOhes(this)" class="playerButton">X</button>
+            <button onclick="exOrOhes(this)" class="playerButton">O</button>
+        </div>
+        <div id="pop-up">
+        </div>
+    </div>
+    <div id="winLoseDraw" class="transitionSet">
+        <h2></h2>
+    </div>
+<script src="tictactoe.js"></script>
+<script src="animation.js"></script>
+</body>
+
+
+</html>
